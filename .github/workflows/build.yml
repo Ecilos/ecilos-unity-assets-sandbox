@@ -1,0 +1,30 @@
+---
+name: Build
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+          submodules: 'recursive'
+
+      - uses: actions/cache@v2
+        with:
+          key: library
+          path: Library
+
+      - name: Set up Unity
+        uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: .
+          githubToken: ${{ secrets.GITHUB_TOKEN }}

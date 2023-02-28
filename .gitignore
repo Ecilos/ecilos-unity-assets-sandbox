@@ -74,3 +74,6 @@ crashlytics-build.properties
 # ProjectSettings files
 ProjectSettings/FbxExportSettings.asset
 ProjectSettings/Packages/
+
+# Other files
+.DS_Store

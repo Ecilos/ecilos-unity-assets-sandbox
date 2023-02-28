@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Avatars.unity
-    guid: 0c873920d73c74295b69cb53fa3192c9
+    path: Assets/Scenes/Sandbox.unity
+    guid: a4bfd540dab07408885eaa90ac44d1a5
   m_configObjects: {}

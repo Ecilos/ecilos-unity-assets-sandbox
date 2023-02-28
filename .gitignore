@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 # ProjectSettings files
 ProjectSettings/Packages/
+
+# UserSettings/
+UserSettings/
